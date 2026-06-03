@@ -1,0 +1,147 @@
+# =========================
+# Greys v3 - Git ignore
+# =========================
+
+# Entornos Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+dist/
+build/
+*.egg-info/
+
+# Variables y secretos reales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+secrets/
+credentials/
+tokens/
+auth/
+
+# Logs y runtime
+logs/
+*.log
+*.pid
+*.lock
+tmp/
+temp/
+cache/
+.cache/
+
+# Bases de datos/runtime local
+*.db
+*.sqlite
+*.sqlite3
+episodes.db
+memory.db
+runtime_state/
+state/
+ledgers/runtime/
+data/runtime/
+
+# Archivos grandes/modelos locales
+models/
+ollama/
+vosk-model*/
+piper-voices/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Audio generado/capturas
+*.wav
+*.mp3
+*.flac
+*.ogg
+recordings/
+captures/
+
+# Sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backups locales
+*_BACKUP*/
+.git_BACKUP_ANTES_PUBLICAR_V3_*/
+
+# Greys runtime/state local
+assets/memory/
+backups/
+*.tar.gz
+*.tgz
+*.zip
+
+# Quarantine/generated candidates
+assets/quarantine/
+
+# Local Git backups - never commit
+.git_BACKUP_ANTES_PUBLICAR_V3_*/
+.git_BACKUP*/
+*_BACKUP*/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Greys runtime/state local
+assets/memory/
+assets/quarantine/
+backups/
+runtime_state/
+state/
+logs/
+*.log
+
+# Archives and local packages
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Heavy local model/runtime assets
+models/
+ollama/
+vosk-model*/
+piper-voices/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
