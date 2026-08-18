@@ -1,6 +1,10 @@
-# Manifiesto de Estado Actual: Greys-v3
+# Estado histórico reportado: Greys-v3 — junio de 2026
 
-## Capacidades Actuales (Lo que Greys PUEDE hacer)
+> **Contexto histórico**
+>
+> Este documento conserva el estado que el proyecto reportaba en el snapshot público saneado de junio de 2026. No describe la implementación privada actual ni debe interpretarse como una afirmación vigente sobre capacidades presentes.
+
+## Capacidades reportadas en el snapshot
 - **Ingesta Segura y Multimodal**: Procesa texto y archivos (`--file`) de tipo `docx`, `txt`, `md` y ahora `pdf` (experimental).
 - **Autonomía Local Validada**: Completado con éxito el piloto de activación de reflejos (`Active Reflex Pilot`), demostrando ruteo activo, bypass de LLM y capacidad de rollback.
 - **Quorum de Promoción (Dry-Run)**: El motor `QuorumPromotionReadiness` evalúa la madurez de los candidatos basándose en masa crítica de evidencia, detectando riesgos de "falso quórum" y rumiación antes de cualquier activación.
@@ -25,19 +29,21 @@
 - **Gestión de Fatiga y Tensión**: Calcula el desgaste modular y suprime rumiación redundante.
 - **External Gate Synergy**: Todas las llamadas derivadas del procesamiento están protegidas por el `ExternalChannelGate`.
 
-## Restricciones Críticas (Lo que Greys NO DEBE hacer todavía)
+## Restricciones críticas reportadas en ese momento
 - **NO promover a stable automáticamente**: La carpeta `src/skills/stable/` permanece inmutable.
 - **NO usar red externa sin bypass**: Las heurísticas locales y la Capa Neural Mínima son el primer punto de decisión.
 
-## Validación del Sistema
-Para asegurar la integridad de la línea base:
+## Validación reportada en ese momento
+Para asegurar la integridad de la línea base se registró:
 ```bash
 export PYTHONPATH=src
 .venv/bin/python -m pytest -q
 ```
-Resultado actual: **511 tests passed** (100% éxito).
+Resultado reportado en ese momento: **511 tests passed** (100% éxito).
 
-## Siguiente Paso Recomendado
+Este resultado se conserva como dato histórico del snapshot y no constituye una medición actual de la implementación privada vigente.
+
+## Siguientes pasos registrados en ese momento
 **A) Entrenamiento Real de Micro-Clasificador**: Implementar un modelo de pesos ligero para la Capa Neural Mínima.
 **B) Expansión de LocalIntentRouter**: Usar los patrones destilados para automatizar respuestas complejas sin LLM.
 **C) Prueba con PDF Fixture Realista**: Validar la extracción con documentos de mayor complejidad.
