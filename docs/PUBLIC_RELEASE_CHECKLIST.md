@@ -1,5 +1,9 @@
 # Checklist de Publicación Pública
 
+> **Contexto histórico — junio de 2026**
+>
+> La checklist siguiente se conserva como registro de lo que se declaró durante la preparación del snapshot público. Sus casillas y formulaciones históricas no se corrigen retroactivamente; las correcciones posteriores se registran por separado al final.
+
 Este documento sirve como guía final antes de cambiar la visibilidad del repositorio de **Cognitive Suite** a público.
 
 ## 1. Seguridad y Secretos
@@ -34,3 +38,19 @@ Este documento sirve como guía final antes de cambiar la visibilidad del reposi
 - Historiales de conversación reales (`dream_journal.jsonl`, etc).
 - Archivos PDF o documentos del usuario procesados durante las pruebas.
 - Pesos de modelos locales si se llegaran a persistir en binario.
+
+---
+
+## Anotaciones posteriores — agosto de 2026
+
+Estas notas no cambian retroactivamente las casillas anteriores:
+
+- **Mitigación del historial privado:** la publicación pública se materializó como un snapshot saneado independiente, sin reutilizar directamente el historial privado de Greys-v3. Esto mitigó el problema registrado en el ítem abierto **Historial de Git**; no elimina el hecho histórico de que ese hallazgo existió durante la preparación.
+- **Licencia:** `LICENSE` no está presente en el repositorio público actual. La casilla histórica marcada como cumplida y su referencia a “MIT” no establecen por sí solas una licencia efectiva. Cualquier decisión de licenciamiento requiere una acción separada y explícita.
+- **Vigencia técnica:** las afirmaciones de tests, imports y coherencia documental anteriores registran el estado declarado durante la preparación de junio de 2026. Este documento no afirma validación continua ni describe autoritativamente la implementación privada actual.
+
+`PUBLIC_RELEASE_CHECKLIST_ROLE = HISTORICAL_RECORD`
+
+`LICENSE_PRESENT_IN_CURRENT_PUBLIC_SNAPSHOT = NO`
+
+`CURRENT_IMPLEMENTATION_VALIDATION = NOT_CLAIMED_BY_THIS_DOCUMENT`

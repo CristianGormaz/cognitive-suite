@@ -1,6 +1,10 @@
 # Identidad del Proyecto: Cognitive Suite
 ### Formerly Greys-v3
 
+> **Contexto histórico — junio de 2026**
+>
+> Este documento conserva la identidad y los principios declarados en el snapshot público saneado de junio de 2026. El cuerpo histórico se mantiene sin normalización editorial. No constituye una especificación autoritativa de la implementación privada actual ni implica que todas las formulaciones o capacidades descritas aquí sigan vigentes sin cambios.
+
 ## ¿Qué es Cognitive Suite?
 
 **Cognitive Suite** es un **runtime cognitivo local experimental**. Es una suite de herramientas diseñada para orquestar la relación entre un operador humano, un sistema local determinístico y modelos de lenguaje de gran escala (LLM) asíncronos.
@@ -30,3 +34,7 @@ El modelo de lenguaje se utiliza para la planificación compleja, el análisis p
 - **Evidencia antes de acción**: No se activan habilidades sin una masa crítica de casos de uso registrados.
 - **Transparencia Total**: Cada decisión es rastreable a un ID de tarea, un plan cognitivo y un resultado de despacho.
 - **Seguridad Inmunológica**: El motor IAFA evalúa continuamente el riesgo de las operaciones, protegiendo la integridad del sistema host.
+
+---
+
+**Estado documental actual:** registro histórico del snapshot público de junio de 2026; no mirror de la implementación vigente.

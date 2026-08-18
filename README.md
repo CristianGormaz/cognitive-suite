@@ -1,6 +1,12 @@
 # Cognitive Suite
 ### Formerly Greys-v3
 
+> **Historical sanitized snapshot — June 2026**
+>
+> This repository preserves a public, sanitized snapshot of Cognitive Suite as it existed in June 2026. It is **not** the current implementation mirror and should not be read as the authoritative current state of the private development line. The project architecture, evidence standards, and Greys/Cognitive Suite responsibility split evolved after this snapshot.
+>
+> The historical claims below are preserved as they were stated in the June snapshot. Their presence records what the project claimed at that time; it does not promote those claims to current verified properties.
+
 **Cognitive Suite is an experimental local cognitive runtime designed to reduce unnecessary dependence on large language models.**
 
 It works as a supervised decision exosuit: it observes failures, classifies risks, learns from bottlenecks, and converts known tasks into faster, safer local capabilities.
@@ -25,21 +31,18 @@ It works as a supervised decision exosuit: it observes failures, classifies risk
 
 ---
 
-## Getting Started
+## Historical usage context
+
+The June snapshot recorded the following prerequisites:
 
 ### Prerequisites
 - Python 3.12+
 - Local LLM server (Ollama recommended)
 - DeepSeek-r1:8b or similar model for reasoning
 
-### Installation
-```bash
-git clone https://github.com/CristianGormaz/greys-v3.git
-cd greys-v3
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+The original installation block referenced the private `CristianGormaz/greys-v3` repository. That reference was never a valid public installation path for this sanitized snapshot, so it is not presented here as a current public installation instruction.
+
+The snapshot also recorded this local usage command:
 
 ### Usage
 ```bash
@@ -47,4 +50,6 @@ export PYTHONPATH=src
 python src/main.py --text "hello"
 ```
 
-For a technical overview, check the `docs/` folder.
+The source, tests, prompts, and documentation in this repository should be interpreted as artifacts of the June 2026 sanitized snapshot. For technical inspection, browse `src/`, `tests/`, and `docs/` directly.
+
+`docs/CURRENT_STATE.md` is likewise preserved as a historical state record from that snapshot period, not as a statement of the project’s present implementation state.
