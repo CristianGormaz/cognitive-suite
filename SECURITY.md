@@ -1,22 +1,27 @@
 # Security Policy
 
+> **Historical snapshot note**
+>
+> This repository is a public, sanitized snapshot from June 2026. It is not the current implementation mirror and this file must not be read as a promise of active security maintenance for the current private development line.
+
 ## Supported Versions
 
-Greys-v3 es un proyecto experimental. Actualmente solo la rama `main` recibe actualizaciones y parches de seguridad.
+No active support matrix is asserted by this historical snapshot.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| v3.x    | :white_check_mark: |
-| < v3.0  | :x:                |
+The previous statement that `main` and Greys-v3 `v3.x` were actively receiving security patches described the project at the time of the June 2026 snapshot and is no longer presented as a current support commitment.
 
 ## Reporting a Vulnerability
 
-Si descubres un problema de seguridad en la arquitectura base, por favor abre un Issue detallando el vector de ataque teórico. Dado que Greys-v3 es de uso estrictamente local, las vulnerabilidades suelen implicar riesgos de escape del sandbox o fugas de metadatos a logs.
+Do **not** publish vulnerability details, exploit steps, secrets, or attack vectors in a public GitHub Issue.
 
-## Prácticas de Seguridad Operativa (Usuario)
+If you need to report a potential security problem and no private reporting channel is enabled for this repository, you may open a minimal public Issue requesting a private contact path. Do not include technical vulnerability details in that Issue.
+
+## Historical operational security practices
+
+The following practices are preserved from the June 2026 snapshot as historical project guidance:
 
 1. **Datos Sensibles:** Nunca subas al repositorio tu directorio `assets/memory/`, `assets/quarantine/`, ni archivos de configuración locales como `.env`.
-2. **Candidatos en Cuarentena:** El código en `assets/quarantine/genesis_candidates/` es, por definición, no confiable. No lo ejecutes manualmente fuera del ciclo de evaluación del `SkillPromotionGate` y `GenesisSandbox`.
-3. **Dependencias:** Ninguna dependencia externa debe añadirse a `requirements.txt` sin haber pasado por el `DependencyReviewLedger`. La instalación automática de paquetes está desactivada por diseño.
-4. **Habilidades Experimentales:** El directorio `src/skills/experimental/` requiere el uso explícito de una `GREYS_EXPERIMENTAL_SKILL_ALLOWLIST` para cargar cualquier código en runtime.
-5. **Promoción a Estable:** El directorio `src/skills/stable/` es el núcleo operativo. No se debe mover código a esta carpeta sin una revisión humana exhaustiva y pruebas de integración superadas en la fase experimental.
+2. **Candidatos en Cuarentena:** El código en `assets/quarantine/genesis_candidates/` era tratado como no confiable y no debía ejecutarse manualmente fuera del ciclo de evaluación previsto.
+3. **Dependencias:** Las dependencias externas debían pasar por revisión antes de añadirse a `requirements.txt`; la instalación automática de paquetes estaba desactivada por diseño.
+4. **Habilidades Experimentales:** El directorio `src/skills/experimental/` requería una allowlist explícita para cargar código experimental en runtime.
+5. **Promoción a Estable:** El directorio `src/skills/stable/` se trataba como núcleo operativo y cualquier promoción requería revisión humana y pruebas de integración.
