@@ -53,3 +53,7 @@ python src/main.py --text "hello"
 The source, tests, prompts, and documentation in this repository should be interpreted as artifacts of the June 2026 sanitized snapshot. For technical inspection, browse `src/`, `tests/`, and `docs/` directly.
 
 `docs/CURRENT_STATE.md` is likewise preserved as a historical state record from that snapshot period, not as a statement of the project’s present implementation state.
+
+## Canales oficiales
+
+**Canales oficiales de Cognitive Suite:** este repositorio (github.com/CristianGormaz/cognitive-suite) y el LinkedIn de Cristian Gormaz. Correo: cognitivesuite.cs@gmail.com (provisorio; migrará a @cognitivesuite.cl). Cognitive Suite nunca pide dinero, claves ni códigos por correo. Cualquier otro canal no es nuestro.
