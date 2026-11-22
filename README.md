@@ -56,4 +56,4 @@ The source, tests, prompts, and documentation in this repository should be inter
 
 ## Canales oficiales
 
-**Canales oficiales de Cognitive Suite:** este repositorio (github.com/CristianGormaz/cognitive-suite) y el LinkedIn de Cristian Gormaz. Correo: cognitivesuite.cs@gmail.com (provisorio; migrará a @cognitivesuite.cl). Cognitive Suite nunca pide dinero, claves ni códigos por correo. Cualquier otro canal no es nuestro.
+**Canales oficiales de Cognitive Suite:** este repositorio (github.com/CristianGormaz/cognitive-suite), el canal de YouTube @cognitivesuite (youtube.com/@cognitivesuite) y el LinkedIn de Cristian Gormaz. Correo: cognitivesuite.cs@gmail.com (provisorio; migrará a @cognitivesuite.cl). Cognitive Suite nunca pide dinero, claves ni códigos por correo. Cualquier otro canal no es nuestro.
